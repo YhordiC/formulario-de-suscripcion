@@ -8,11 +8,16 @@
 body{
     width: 100vw;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    
     
 }
 .form-interface{
-    
- width: auto;
+ background-color: azure;   
+ max-width:427px;
+ width: 100%;
+
  height: 100%;
  display: flex;
  flex-direction: column;
@@ -21,33 +26,52 @@ body{
 }
 .container-portada{
     background-image: url(imgs/man-6205496_1280.jpg);   
-    background-position: center center;
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-   height: 300px;
-  
+   height: 300px;  
    border-radius:  0  0 25px  25px;
+   padding-bottom: calc(6em + 25vh);
 }
-
 
 .container-form{
     width: 100%;
     padding: 22px;
 }
 
-.container-form section{
+.container-form #informacion{
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding-bottom: calc(2em + 1vh);
 }
 .container-form section h1{
     font-size: 44px;
 }
+
 .container-form section p{
-    font-size: 18px;
+    font-size: calc(0.8em + 1vw) ;    
+}
+.container-form #informacion > p{
+    margin-bottom: 10px;
 }
 
+.loqueganaras{
+ display:flex;
+ gap: 5px;
+}
+
+.loqueganaras span {
+    background-color: rgb(255, 136, 0);
+    border-radius: 13px;
+    width: 25px;
+    height: 25px;
+    padding: 4px;
+}
+.loqueganaras span img{
+    width: 15px;
+    height: 15px;
+}
 
 .container-form form{
 display: flex;
@@ -65,4 +89,47 @@ gap: 20px;
     border: rgb(159, 159, 163) solid 1px;
     padding: 10px; 
 }
+.container-form form p{
+    display: inline-flex;
+    justify-content: space-between;
+}
+#error-email{
+    color: red;
+}
+.container-form .emailError{
+    color: red;
+    border: red solid 1px;
+    background-color: rgba(255, 0, 0, 0.137);
+}
+button{
+    background-color: rgb(31, 30, 30);
+    color: azure;
+}
 
+
+button:hover{
+    cursor: pointer;
+}
+
+@media (min-width: 836px) {
+    body{
+        background-color: rgb(51, 50, 50);
+        align-items: center;
+    }
+    .form-interface{
+        max-width: 871px;
+        flex-direction: row-reverse;
+        height: 704px;
+        border-radius: 27px;
+        padding: 27px;
+
+    }
+    .container-portada{
+        height: 100%;
+        border-radius: 20px;
+    }
+    .container-form section p{
+        font-size: 15px;
+    }
+
+}

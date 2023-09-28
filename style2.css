@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body{
+    background-color: rgb(51, 50, 50);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 11px;
+}
+section{
+width: 100%;
+max-width: 365px;
+padding: 38px;
+display: flex;
+flex-direction: column;
+gap: 23px;
+background-color: azure;
+border-radius: 19px;
+
+}
+picture{
+    width: 40px;
+    height: 40px;
+    background-color: #ff8800;
+    padding: 11px;
+    border-radius: 50px ;
+}
+
+picture img{
+    width: 100%;
+    height: 100%;
+}
+h2{
+    font-size: 48px;
+    line-height: 0.9;
+}
+p{
+    font-size: 15px;
+}
+
+button{
+    background-color: rgb(51, 50, 50);
+    color: azure;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: rgb(241, 92, 5);
+}
+button:active{
+    background-color: rgb(51, 50, 50) ;
+}
+
